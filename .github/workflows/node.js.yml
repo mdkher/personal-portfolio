@@ -25,7 +25,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: ngh --no-silent
+    - run: git config user.email "mdkher@gmail.com"
+    - run: git config user.name "Manan Kher"
     - run: npm install
     - run: npm install -g angular-cli-ghpages
     - run: npm test

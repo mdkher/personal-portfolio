@@ -29,5 +29,5 @@ jobs:
     - run: git config user.name "Manan Kher"
     - run: npm install
     - run: npm install -g angular-cli-ghpages
-    - run: npm build
+    - run: npm run-script build
     - run: angular-cli-ghpages

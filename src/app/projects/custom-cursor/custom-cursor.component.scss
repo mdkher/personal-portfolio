@@ -1,0 +1,38 @@
+.container{
+    cursor: none;
+    background-color: black;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: rgb(80, 80, 80);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    // transition-timing-function: ease-out;
+    // animation: cursorAnim .5s infinite alternate;
+}
+
+.clickEvent{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: rgb(80, 80, 80);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .2s forwards;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}

@@ -29,4 +29,5 @@ jobs:
     - run: git config user.name "Manan Kher"
     - run: npm install
     - run: npm install -g angular-cli-ghpages
-    - run: npm test
+    - run: npm run-script build
+    - run: angular-cli-ghpages --repo=https://f183c4bf141ecfd3e6ecab8568ccc5fcc12953e1@github.com/mdkher/personal-portfolio.git
